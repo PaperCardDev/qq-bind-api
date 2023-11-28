@@ -1,6 +1,6 @@
-package cn.paper_card.qq_bind.exception;
+package cn.paper_card.qq_bind.api.exception;
 
-import cn.paper_card.qq_bind.BindInfo;
+import cn.paper_card.qq_bind.api.BindInfo;
 import org.jetbrains.annotations.NotNull;
 
 // QQ号已经被绑定了

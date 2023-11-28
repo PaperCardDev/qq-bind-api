@@ -1,4 +1,4 @@
-package cn.paper_card.qq_bind;
+package cn.paper_card.qq_bind.api;
 
 import java.util.UUID;
 
