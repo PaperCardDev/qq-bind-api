@@ -15,6 +15,6 @@ public interface BindService {
 
     @Nullable BindInfo queryByQq(long qq) throws Exception;
 
-    void updateName(@NotNull UUID uuid, long qq, @NotNull String newName) throws Exception;
+    boolean updateName(@NotNull UUID uuid, long qq, @NotNull String newName) throws Exception;
 
 }
