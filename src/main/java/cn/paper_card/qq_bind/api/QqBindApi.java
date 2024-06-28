@@ -3,21 +3,17 @@ package cn.paper_card.qq_bind.api;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
+import java.util.UUID;
 
 @SuppressWarnings("unused")
 public interface QqBindApi {
 
-    // 接收验证码的QQ主群消息，由其他模块调用
-    @Nullable List<String> onMainGroupMessage(long qq, @NotNull String message);
+    void addBind(@NotNull UUID uuid, long qq, @NotNull String remark) throws Exception;
 
-    @NotNull BindService getBindService();
+    boolean removeBind(@NotNull UUID uuid, long qq) throws Exception;
 
-    @NotNull BindCodeService getBindCodeService();
+    @Nullable BindInfo queryByUuid(@NotNull UUID uuid) throws Exception;
 
-    // 设置QQ主群号码
-    void setGroupId(long id);
+    @Nullable BindInfo queryByQq(long qq) throws Exception;
 
-    // 获取QQ主群号码
-    long getGroupId();
 }

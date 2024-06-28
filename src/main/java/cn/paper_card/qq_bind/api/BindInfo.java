@@ -1,11 +1,7 @@
 package cn.paper_card.qq_bind.api;
 
-import java.util.UUID;
-
 public record BindInfo(
-        UUID uuid, // 玩家UUID
-
-        String name, // 玩家名
+        String uuid, // 玩家UUID
         long qq, // 玩家QQ
 
         String remark, // 备注
